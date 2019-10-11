@@ -25,6 +25,8 @@ public class MainActivity extends BaseActivity {
     Button btn2View;
     @BindView(R.id.btn3)
     Button btn3View;
+    @BindView(R.id.btn4)
+    Button btn4View;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -33,6 +35,7 @@ public class MainActivity extends BaseActivity {
 
         btn2View.setVisibility(View.VISIBLE);
         btn3View.setVisibility(View.VISIBLE);
+        btn4View.setVisibility(View.VISIBLE);
     }
 
     @Override
@@ -55,6 +58,12 @@ public class MainActivity extends BaseActivity {
     @OnClick(R.id.btn3)
     void btn3Onclick() {
         Intent intent = new Intent(this, AnnotationActivity.class);
+        startActivity(intent);
+    }
+
+    @OnClick(R.id.btn4)
+    void btn4Onclick() {
+        Intent intent = new Intent(this, AnnotationProcessorActivity.class);
         startActivity(intent);
     }
 }

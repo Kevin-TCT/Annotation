@@ -18,6 +18,7 @@
         </activity>
         <activity android:name=".MainActivity2"/>
         <activity android:name=".AnnotationActivity"/>
+        <activity android:name=".AnnotationProcessorActivity"/>
     </application>
 
 </manifest>

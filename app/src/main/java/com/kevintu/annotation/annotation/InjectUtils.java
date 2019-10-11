@@ -42,6 +42,7 @@ public class InjectUtils {
 
     /**
      * 运行时通过反射获取注解，并赋值
+     * 会影响速度，消耗一定的资源
      *
      * @param activity
      */
@@ -63,7 +64,7 @@ public class InjectUtils {
             }
             for (Annotation annotation : annotations) {
                 Iterator<Map.Entry<Class, BaseHandler>> iterable = entries.iterator();
-                // TODO: 2019/10/11 双层循环，有待优化 
+                // TODO: 2019/10/11 双层循环，有待优化
                 while (iterable.hasNext()) {
                     Map.Entry<Class, BaseHandler> entry = iterable.next();
                     if (entry.getKey().isAssignableFrom(annotation.getClass())) {

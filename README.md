@@ -25,6 +25,17 @@
 <br/>
 <br/>
 
+[gradle之apt与annotationProcessor与kapt](https://blog.csdn.net/sinat_31057219/article/details/82798660)<br/>
+&emsp;&emsp;<font color=red>APT(Annotation Processing Tool)</font>是一种处理注释的工具,它对源代码文件进行检测找出其中的Annotation，根据注解自动生成代码。
+Annotation处理器在处理Annotation时可以根据源文件中的Annotation生成额外的源文件和其它的文件(文件具体内容由Annotation处理器的编写者决定),
+APT还会编译生成的源文件和原来的源文件，将它们一起生成class文件。<br/>
+
+[javac和jack编译](https://www.jianshu.com/p/4877022d2344)<br/>
+[如何看待 Google 废弃 Jack 而直接在 javac 和 dx 上支持 Java 8?](https://www.zhihu.com/question/57149643)<br/>
+<br/>
+<br/>
+
+
 [JakeWharton的Butterknife](https://github.com/JakeWharton/butterknife) <br/>
 [Squre公司研发的javapoet，用于方便生成Java代码](https://github.com/square/javapoet)<br/>
 <br/>

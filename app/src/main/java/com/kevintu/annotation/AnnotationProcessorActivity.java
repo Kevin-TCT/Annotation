@@ -19,10 +19,10 @@ public class AnnotationProcessorActivity extends BaseActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.actiity_main);
 
         ViewInjector.injectView(this);
 
-        //resultView.setText("injected");
+        resultView.setText("injected");
     }
 }

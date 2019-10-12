@@ -23,7 +23,7 @@ import java.util.Set;
 // 2、手动注册processor：
 //      1、新建一个resources/目录，与java/目录同级，在里边建一个javax.annotation.processing.Processor文件
 //      2、在该文件里写上MyProcessor的路径，com.kevintu.annotator.IocProcessor
-@AutoService(Processor.class)
+//@AutoService(Processor.class)
 public class IocProcessor extends AbstractProcessor {
 
     /**
@@ -93,6 +93,7 @@ public class IocProcessor extends AbstractProcessor {
      */
     @Override
     public boolean process(Set<? extends TypeElement> annotations, RoundEnvironment roundEnv) {
+        mMessager.printMessage(Diagnostic.Kind.WARNING, "process()   start-----------------");
         mProxyInfo.clear();
 
         // 获取被注解的元素
